@@ -15,7 +15,18 @@ console.log(convert(5));//300
 */
 
 //perimeter of a rectangle
-function findPerimeter(length,width){
+/*function findPerimeter(length,width){
     return 2*(length+width);
 }
 console.log(findPerimeter(3,2)); //10
+*/
+//check negative
+function isNegative(number){
+    if(number<0){
+        return true
+    }
+    else
+        return false
+}
+ console.log(isNegative(-4));//true
+ console.log(isNegative(2));//false
