@@ -56,20 +56,35 @@ console.log(findLargest(5,2,9));//9
 console.log(findLargest(-2,-3,-8));//-2
 */
 //challenge 7 BMI calculator
-function calculateBMI(weight,height){
-     let BMI = weight / (height*height)
+/*function calculateBMI(weight,height){
+     let BMI = weight / (height*height);
     if (BMI < 18.5){
-        return "underweight"
+        return  `your BMI is ${BMI} -underweight`
     }
     else if(BMI >=18.5 && BMI <=24.5){
-        return "normalweight"
+        return `your BMI is ${BMI} - normalweight`
     }
     else if(BMI >=25 && BMI<=29.9){
-        return "overweight"
+        return `your BMI is ${BMI} - Overweight`
     }
     else (BMI<=30)
-        return "obese"
+        return `your BMI is ${BMI} - obese`
 }
-console.log(calculateBMI(62,1.25));//obese
-console.log(calculateBMI(40,1.7));//underweight
-
+console.log(calculateBMI(62,1.25));//your BMI is 39.68 - obese
+console.log(calculateBMI(40,1.7));//your BMI is 13.840883044982699 - underweight
+*/
+//challenge 8 greeting based on time
+function greetUser(name,hour){
+    if(hour>=5 && hour <=11){
+        return `good morning ${name}`
+    }
+    else if(hour>=12 && hour<=17){
+        return `good afternoon ${name}`
+    }
+    else if(hour>=18 && hour<=21){
+        return `good evening ${name}`
+    }
+    else (hour>=22 && hour<=4)
+        return `good night ${name}`
+}
+console.log(greetUser("caren",15));//good afternoon caren
