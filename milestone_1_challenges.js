@@ -42,7 +42,7 @@ console.log(findPerimeter(3,2)); //10
 console.log(canDrive("Caren", 16))//Carenis not old enough to drive yet
 */
 // challenge 6 largest number
-function findLargest(a,b,c){
+/*function findLargest(a,b,c){
     if(a>b && a>c){
         return a
     }
@@ -52,5 +52,24 @@ function findLargest(a,b,c){
     else 
         return c
 }
-console.log(findLargest(5,2,9));
-console.log(findLargest(-2,-3,-8));
+console.log(findLargest(5,2,9));//9
+console.log(findLargest(-2,-3,-8));//-2
+*/
+//challenge 7 BMI calculator
+function calculateBMI(weight,height){
+     let BMI = weight / (height*height)
+    if (BMI < 18.5){
+        return "underweight"
+    }
+    else if(BMI >=18.5 && BMI <=24.5){
+        return "normalweight"
+    }
+    else if(BMI >=25 && BMI<=29.9){
+        return "overweight"
+    }
+    else (BMI<=30)
+        return "obese"
+}
+console.log(calculateBMI(62,1.25));//obese
+console.log(calculateBMI(40,1.7));//underweight
+
