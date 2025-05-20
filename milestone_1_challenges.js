@@ -32,7 +32,7 @@ console.log(findPerimeter(3,2)); //10
  console.log(isNegative(2));//false
  */
 //challenge 5 can i drive
-function canDrive(name , age){
+/*function canDrive(name , age){
     if (age>=18){
         return name  +  "is old enough to drive"
     }
@@ -40,3 +40,17 @@ function canDrive(name , age){
         return name  +  "is  not old enough to drive yet"
 };
 console.log(canDrive("Caren", 16))//Carenis not old enough to drive yet
+*/
+// challenge 6 largest number
+function findLargest(a,b,c){
+    if(a>b && a>c){
+        return a
+    }
+    else if(b>a && c>a){
+        return b
+    }
+    else 
+        return c
+}
+console.log(findLargest(5,2,9));
+console.log(findLargest(-2,-3,-8));
