@@ -14,14 +14,14 @@ console.log(addition(8 , 5)) ;//13
 console.log(convert(5));//300
 */
 
-//perimeter of a rectangle
+// challenge 3 perimeter of a rectangle
 /*function findPerimeter(length,width){
     return 2*(length+width);
 }
 console.log(findPerimeter(3,2)); //10
 */
-//check negative
-function isNegative(number){
+// challenge 4 check negative
+/*function isNegative(number){
     if(number<0){
         return true
     }
@@ -30,3 +30,13 @@ function isNegative(number){
 }
  console.log(isNegative(-4));//true
  console.log(isNegative(2));//false
+ */
+//challenge 5 can i drive
+function canDrive(name , age){
+    if (age>=18){
+        return name  +  "is old enough to drive"
+    }
+    else
+        return name  +  "is  not old enough to drive yet"
+};
+console.log(canDrive("Caren", 16))//Carenis not old enough to drive yet
