@@ -128,7 +128,18 @@ function powerUp(num,times){
     }
     return result;
 }
-console.log(powerUp(2,3));//8
-console.log(powerUp(5,0));//1
-console.log(powerUp(3,4));//81
-console.log(powerUp(0));//1
+//console.log(powerUp(2,3));//8
+//console.log(powerUp(5,0));//1
+//console.log(powerUp(3,4));//81
+//console.log(powerUp(0));//1
+
+//challenge 13 factorial calculator
+function factorial(n){
+    let number = 1;
+    for(i=1; i<=n; i++){
+        number=number*1
+    }
+    return number;
+}
+console.log((factorial(0)));
+console.log(factorial(4));
