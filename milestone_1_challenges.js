@@ -117,5 +117,18 @@ function sumEvenNumbers(n){
     }
     return sum;
 }
-console.log(sumEvenNumbers(6));//12
-console.log(sumEvenNumbers(10));//30
+//console.log(sumEvenNumbers(6));//12
+//console.log(sumEvenNumbers(10));//30
+
+//challenge 12 multiple by itself
+function powerUp(num,times){
+    let result = 1;
+    for(let i=0; i< times; i++){
+        result=result*num
+    }
+    return result;
+}
+console.log(powerUp(2,3));//8
+console.log(powerUp(5,0));//1
+console.log(powerUp(3,4));//81
+console.log(powerUp(0));//1
