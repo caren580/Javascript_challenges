@@ -21,4 +21,24 @@ function findMax(arr){
     }
     return max;
 }
-console.log(findMax([3,7,2,9,5]));
+//console.log(findMax([3,7,2,9,5]));//9
+
+//challenge 3 election winner
+function findWinner(arr){
+    let winner = arr[0];
+    for(let i=0; i<arr.length; i++){
+        if(arr[i].votes > winner.votes){
+            winner=arr[i];
+        }
+
+    }
+    return winner
+}
+
+    const candidates=[
+        {name: "Alice", votes: 50},
+        { name: "Bob", votes:75},
+        {name:"charlie", votes:65}
+    ]
+
+console.log(findWinner(candidates));
