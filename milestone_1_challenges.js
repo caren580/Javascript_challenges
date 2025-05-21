@@ -102,7 +102,7 @@ function fizzbuzzcheck(number){
     else
        return number
 }
-console.log(fizzbuzzcheck(3));//fizz
+//console.log(fizzbuzzcheck(3));//fizz
 //challenge 10
 function perimeter(i,num){
     switch(i){
@@ -179,6 +179,6 @@ function sumDigits(num){
     }
     return sum;
 }
-//console.log(sumDigits(123));//6
-//console.log(sumDigits(4567));//22
+console.log(sumDigits(123));//6
+console.log(sumDigits(4567));//22
   
