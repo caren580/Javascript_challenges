@@ -60,6 +60,12 @@ function countProperties(obj){
     let count= Object.keys(obj).length
     return count
 }
-console.log(countProperties({ name :"alice", age:25 , city: "paris"}));//3
+//console.log(countProperties({ name :"alice", age:25 , city: "paris"}));//3
 
+//chalenge 6 filter by length
+function filterBylength(arr,minlength){
+    let items= arr.filter(i=> i.length>= minlength)
+        return items
 
+}
+console.log(filterBylength(["cat", "giraffe", "hippo", "dog", "elephant" ] ,5));//[ 'giraffe', 'hippo', 'elephant' ]
