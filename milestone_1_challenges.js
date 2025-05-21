@@ -74,7 +74,7 @@ console.log(calculateBMI(62,1.25));//your BMI is 39.68 - obese
 console.log(calculateBMI(40,1.7));//your BMI is 13.840883044982699 - underweight
 */
 //challenge 8 greeting based on time
-function greetUser(name,hour){
+/*function greetUser(name,hour){
     if(hour>=5 && hour <=11){
         return `good morning ${name}`
     }
@@ -88,3 +88,21 @@ function greetUser(name,hour){
         return `good night ${name}`
 }
 console.log(greetUser("caren",15));//good afternoon caren
+*/
+//challenge 9 fizz buzz
+
+//challenge 10
+function perimeter(i,num){
+    switch(i){
+        case "s":
+            return 4*num;
+            break;
+        case "c":
+            return 2*6.28*num;
+            break;
+         default:
+         return;     
+    }
+}
+console.log(perimeter("s",7));//28
+console.log(perimeter("c",4));//25.12
