@@ -104,5 +104,18 @@ function perimeter(i,num){
          return;     
     }
 }
-console.log(perimeter("s",7));//28
-console.log(perimeter("c",4));//25.12
+//console.log(perimeter("s",7));//28
+//console.log(perimeter("c",4));//25.12
+
+//challenge 11 sum of even numbers
+function sumEvenNumbers(n){
+    let sum=0;
+    for(let i=0; i<=n; i++){
+        if(i%2 === 0){
+            sum= sum + i;
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers(6));//12
+console.log(sumEvenNumbers(10));//30
