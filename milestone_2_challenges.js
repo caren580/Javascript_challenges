@@ -53,4 +53,13 @@ function findLongestWord(arr){
     }
     return longest
 }
-console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]));//grapefruit
+//console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]));//grapefruit
+
+//challenge 5 count propeties
+function countProperties(obj){
+    let count= Object.keys(obj).length
+    return count
+}
+console.log(countProperties({ name :"alice", age:25 , city: "paris"}));//3
+
+
