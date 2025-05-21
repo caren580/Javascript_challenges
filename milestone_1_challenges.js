@@ -141,5 +141,18 @@ function factorial(n){
     }
     return number;
 }
-console.log((factorial(0)));
-console.log(factorial(4));
+//console.log((factorial(0)));
+//console.log(factorial(4));
+
+//challenge 14 multiple sum
+function sumMultiples(n,divisor){
+    let sum = 0;
+    for(i=1; i=n; i++){
+        if(i%divisor === 0) {
+            sum = sum + 1 ;
+        }
+    }
+    return sum
+}
+console.log(sumMultiples(10,2));
+console.log(sumMultiples(15,3));
