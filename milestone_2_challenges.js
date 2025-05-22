@@ -129,12 +129,25 @@ function linearSearch(arr,val){
 //challenge 12 reverse linear search
 function reverseLinearSearch(arr,val){
     let lastindex=-1;
-    for(i=0; i<arr.length; i++){
+    for(let i=0; i<arr.length; i++){
         if(arr[i] === val){
             lastindex = i;
         }
     }
     return lastindex
 }
-console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));//5
-console.log(reverseLinearSearch([5, 3, 7, 1,4],10));//-1
+//console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));//5
+//console.log(reverseLinearSearch([5, 3, 7, 1,4],10));//-1
+
+//challenge 13 linear search all indices
+function linearSearchAll(arr,val){
+    let allIndices=[];
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] == val){
+            allIndices.push(i)
+        }
+    }
+    return allIndices
+}
+console.log(linearSearchAll([5, 3, 7, 1, 4, 7],7));
+console.log(linearSearchAll([5, 3, 7, 1, 4],10));
