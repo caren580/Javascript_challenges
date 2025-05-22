@@ -149,5 +149,21 @@ function linearSearchAll(arr,val){
     }
     return allIndices
 }
-console.log(linearSearchAll([5, 3, 7, 1, 4, 7],7));
-console.log(linearSearchAll([5, 3, 7, 1, 4],10));
+//console.log(linearSearchAll([5, 3, 7, 1, 4, 7],7));//[ 2, 5 ]
+//console.log(linearSearchAll([5, 3, 7, 1, 4],10));//[]
+
+//challenge 14 count occurences
+function occurences(arr){
+    let occurences= {};
+    arr.forEach((element) =>{
+        if (element in occurences) {
+            occurences [element]+= 1;
+            return
+        }
+        occurences [element] = 1;
+
+    });
+    return occurences;
+}
+console.log(occurences(["apples", "bananas", "apples", "oranges", "apples"]));//{ apples: 3, bananas: 1, oranges: 1 }
+
