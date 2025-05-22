@@ -99,6 +99,16 @@ function differenceOddEven(arr){
 //console.log(differenceOddEven([1, 2, 3, 4, 5, 6]));//3
 
 //challenge 9 count truthy
+function countTruthy(obj){
+    let sum=0;
+    for (key in obj){
+        if(obj[key]){
+            sum ++
+        }
+    }
+    return sum
+}
+console.log(countTruthy({ a:0, b:"Hello", c:false, d:42, e:null}));//2
 
 
 // challenge 10 average of numbers
@@ -178,5 +188,7 @@ function removeDuplicates(arr){
     }
     return uniqueArray;
 }
-console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));//[ 1, 2, 3, 4, 5 ]
+//console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));//[ 1, 2, 3, 4, 5 ]
+
+
 
