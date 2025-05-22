@@ -108,7 +108,7 @@ function countTruthy(obj){
     }
     return sum
 }
-console.log(countTruthy({ a:0, b:"Hello", c:false, d:42, e:null}));//2
+//console.log(countTruthy({ a:0, b:"Hello", c:false, d:42, e:null}));//2
 
 
 // challenge 10 average of numbers
@@ -189,6 +189,29 @@ function removeDuplicates(arr){
     return uniqueArray;
 }
 //console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));//[ 1, 2, 3, 4, 5 ]
+
+//challenge 16 most frequent
+function mostFrequent(arr){
+    let occurences = {};
+    arr.forEach ((element) =>{
+        if(element in occurences){
+            occurences [element]  += 1;
+        }
+        else{
+        occurences[element]= 1;
+        }
+    });
+    let maxCount =0;
+    let mostFrequentElement=null;
+    for(let element in occurences){
+        if(occurences[element] > maxCount){
+            maxCount= occurences[element];
+            mostFrequentElement= element;
+        }
+    }
+    return mostFrequentElement;
+}
+console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));//3
 
 
 
