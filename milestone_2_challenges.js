@@ -165,5 +165,18 @@ function occurences(arr){
     });
     return occurences;
 }
-console.log(occurences(["apples", "bananas", "apples", "oranges", "apples"]));//{ apples: 3, bananas: 1, oranges: 1 }
+//console.log(occurences(["apples", "bananas", "apples", "oranges", "apples"]));//{ apples: 3, bananas: 1, oranges: 1 }
+
+//challenge 15 remove duplicates
+function removeDuplicates(arr){
+    let uniqueArray= [];
+    for (let i=0; i<arr.length; i++){
+        if(!uniqueArray.includes (arr[i])){
+            uniqueArray.push (arr[i]);
+
+        }
+    }
+    return uniqueArray;
+}
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));//[ 1, 2, 3, 4, 5 ]
 
