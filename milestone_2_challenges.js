@@ -82,7 +82,7 @@ function sumEvenNumbers(arr){
 }
 //console.log(sumEvenNumbers([1 ,2 ,3 , 4, 5, 6]));//12
 
-//challenge 8
+//challenge 8 difference between sum of even and odd numbers
 function differenceOddEven(arr){
     let sumeven = 0;
     let sumodd = 0;
@@ -96,4 +96,18 @@ function differenceOddEven(arr){
     }
     return sumeven - sumodd;
 }
-console.log(differenceOddEven([1, 2, 3, 4, 5, 6]));//3
+//console.log(differenceOddEven([1, 2, 3, 4, 5, 6]));//3
+
+//challenge 9 count truthy
+
+
+// challenge 10 average of numbers
+function average(arr){
+    let total=0;
+    for(let i=0; i<arr.length; i++){
+        total += arr[i];
+    }
+    return total/arr.length;
+    
+}
+console.log(average([2, 4, 6, 8]));//5
