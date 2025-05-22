@@ -110,4 +110,18 @@ function average(arr){
     return total/arr.length;
     
 }
-console.log(average([2, 4, 6, 8]));//5
+//console.log(average([2, 4, 6, 8]));//5
+
+// challenge 11 linear search
+function linearSearch(arr,val){
+    for(i=0; i<arr.length; i++){
+        if(arr[i] === val){
+    
+                return i;
+            }
+            
+    }
+    return -1
+}
+console.log(linearSearch([5, 3, 7, 1, 4], 7));//2
+console.log(linearSearch([5, 3, 7, 1, 4], 10));//-1
