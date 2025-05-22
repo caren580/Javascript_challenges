@@ -80,4 +80,20 @@ function sumEvenNumbers(arr){
     }
     return sum
 }
-console.log(sumEvenNumbers([1 ,2 ,3 , 4, 5, 6]));//12
+//console.log(sumEvenNumbers([1 ,2 ,3 , 4, 5, 6]));//12
+
+//challenge 8
+function differenceOddEven(arr){
+    let sumeven = 0;
+    let sumodd = 0;
+    for(let i=0; i<arr.length; i++){
+        if(arr[i]%2 === 0){
+            sumeven +=arr[i];
+        }
+        else{
+            sumodd +=arr[i];
+        }
+    }
+    return sumeven - sumodd;
+}
+console.log(differenceOddEven([1, 2, 3, 4, 5, 6]));//3
